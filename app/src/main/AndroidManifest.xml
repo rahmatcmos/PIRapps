@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hackathon.merdeka.publicinfrastructurereport" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- rear facing cam -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <!-- users location -->
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="true" />
+
+    <application
+        android:name="hackathon.merdeka.publicinfrastructurereport.app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name_singkat"
+        android:theme="@style/AppTheme" >
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="hackathon.merdeka.publicinfrastructurereport.activity.SplashScreenActivity"
+            android:theme="@style/AppTheme.CustomActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="hackathon.merdeka.publicinfrastructurereport.activity.LoginActivity"
+            android:theme="@style/AppTheme.CustomActionBar" >
+        </activity>
+        <activity
+            android:name="hackathon.merdeka.publicinfrastructurereport.activity.RegisterActivity"
+            android:theme="@style/AppTheme.CustomActionBar" >
+        </activity>
+        <activity
+            android:name="hackathon.merdeka.publicinfrastructurereport.activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name="hackathon.merdeka.publicinfrastructurereport.activity.ReportActivity"
+            android:label="@string/kirim"
+            android:parentActivityName="hackathon.merdeka.publicinfrastructurereport.activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="hackathon.merdeka.publicinfrastructurereport.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="hackathon.merdeka.publicinfrastructurereport.activity.DetailActivity"
+            android:label=""
+            android:parentActivityName="hackathon.merdeka.publicinfrastructurereport.activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="hackathon.merdeka.publicinfrastructurereport.activity.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

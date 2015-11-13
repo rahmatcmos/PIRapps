@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@android:drawable/ic_menu_camera"
+            android:title="@string/drawer_item_home"/>
+        <item
+            android:id="@+id/profil"
+            android:icon="@drawable/ic_account"
+            android:title="@string/drawer_item_profil"/>
+    </group>-->
+
+    <item android:title="@string/kategori">
+        <menu>
+            <item
+                android:id="@+id/jalan_raya"
+                android:title="@string/jalan_raya"/>
+            <item
+                android:id="@+id/rambu_jalan"
+                android:title="@string/rambu_jalan"/>
+            <item
+                android:id="@+id/traffic_light"
+                android:title="@string/traffic_light"/>
+            <item
+                android:id="@+id/penerangan"
+                android:title="@string/penerangan"/>
+            <item
+                android:id="@+id/halte_bus"
+                android:title="@string/halte_bus"/>
+            <item
+                android:id="@+id/telepon_umum"
+                android:title="@string/telepon_umum"/>
+        </menu>
+    </item>
+
+</menu>

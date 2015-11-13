@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- BLUE
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorPrimaryLight">#BBDEFB</color>-->
+
+    <!-- INDIGO
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryLight">#C5CAE9</color>
+    <color name="colorAccent">#FF4081</color>-->
+
+    <!-- ORANGE -->
+    <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryDark">#E64A19</color>
+    <color name="colorPrimaryLight">#FFCCBC</color>
+    <color name="colorAccent">#448AFF</color>
+
+    <!-- CUSTOM COLOR -->
+    <color name="colorFab">#448AFF</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#727272</color>
+    <color name="colorWhiteText">#FFFFFF</color>
+    <color name="colorToolbarText">#FFFFFF</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorRegisterBg">#2E3237</color>
+    <color name="colorHint">#55000000</color>
+    <color name="colorBgEdittext">#55FFFFFF</color>
+    <color name="colorBgButton">#D84315</color>
+    <color name="input_register">#888888</color>
+    <color name="btn_login_bg">#ECEEF1</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+</resources>
